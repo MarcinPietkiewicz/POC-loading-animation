@@ -1,0 +1,108 @@
+@keyframes zoomIn1 {
+  0% {
+    transform: scale(0);
+  }
+  19% {
+    transform: scale(1.1);
+  }
+  23% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn2 {
+  0%{
+    transform: scale(0);
+  }
+  22% {
+    transform: scale(0);
+  }
+  41% {
+    transform: scale(1.1);
+  }
+  45% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn3 {
+  0%{
+    transform: scale(0);
+  }
+  44% {
+    transform: scale(0);
+  }
+  62% {
+    transform: scale(1.1);
+  }
+  67% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn4 {
+  0%{
+    transform: scale(0);
+  }
+  66% {
+    transform: scale(0);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  89% {
+    transform: scale(1);
+  }
+}
+body {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.loader {
+  width:220px;
+  background-color:yellow;
+  text-justify:center;
+  position:relative;
+}
+
+.logo {
+  position: absolute;
+  z-index: 50;
+}
+
+.tractor {
+  position: absolute;
+  z-index: 53;
+  margin-left: -7px;
+  margin-top: 19px;
+  animation: zoomIn1 2.5s infinite;
+}
+
+.cow {
+  position: absolute;
+  z-index: 62;
+  margin-left: 130px;
+  margin-top: 10px;
+  animation: zoomIn2 2.5s infinite;
+}
+.pig {
+  position: absolute;
+  margin-left: 118px;
+  margin-top: 111px;
+  z-index: 51;
+  animation: zoomIn3 2.5s infinite;
+}
+.alpaca {
+  position: absolute;
+  z-index: 49;
+  margin-top: 113px;
+  margin-left: 15px;
+  animation: zoomIn4 2.5s infinite;
+}
+
+.second {
+  position:relative;
+  margin-top:200px;
+}
